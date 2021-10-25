@@ -12,13 +12,15 @@ rails new . --api -d postgresql -T
 ```
 
 ## ejecution project
-
-```
+```bash
+# Servidor
 rails s
+# Testing Rspec
+bundle exec rspec
 ```
 
 ## Install gem's project
-```
+```bash
 rails webpacker:install
 ```
 
@@ -31,7 +33,7 @@ gem install mysql2 --platform=ruby -- '--with-mysql-lib="C:\mysql-connector\lib"
 ```
 
 ## Generar controlador
-```
+```bash
 rails g controller Subject index show edit new delete
 rails g controller page index show edit new delete
 
@@ -39,7 +41,14 @@ rails destroy controller subject index show edit new delete
 ```
 
 ## Generar Modelos
-```
+```bash
 rails g model Subject name:string position:integer visible:boolean
 rails db:migrate 
 ```
+
+## Gemas de Ruby
+```bash
+rails g rspec:install
+```
+
+![](img/test_ruby.jpg)
