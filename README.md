@@ -43,12 +43,28 @@ rails destroy controller subject index show edit new delete
 ## Generar Modelos
 ```bash
 rails g model Subject name:string position:integer visible:boolean
-rails db:migrate 
+rails db:migrate
+rails db:seed 
 ```
 
 ## Gemas de Ruby
 ```bash
 rails g rspec:install
 ```
+## Generar Modelos
+```bash
+rails g model user email name auth_token
+rails g model post title content published:boolean user:references
+# Migración para Develop
+rails db:migrate
+# Migración para Test
+rails db:migrate RAILS_ENV=test
+```
+
+## Generar Controladores
+```bash
+rails g rspec:install
+```
+
 
 ![](img/test_ruby.jpg)
