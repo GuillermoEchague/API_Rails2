@@ -63,7 +63,8 @@ rails db:migrate RAILS_ENV=test
 
 ## Generar Controladores
 ```bash
-rails g rspec:install
+rails g factory_bot:model user email name auth_token
+rails g factory_bot:model post title content published user:references
 ```
 
 
