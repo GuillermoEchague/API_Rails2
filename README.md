@@ -72,7 +72,7 @@ rails g serializer post
 ```
 
 ## Caso de Uso
-![](img/casos de uso.png)
+![](img/casos_de_uso.png)
 
 ## Entidad Relación
 ![](img/entidad-relacion.png)
@@ -80,7 +80,7 @@ rails g serializer post
 ## Problema N+1
 ![](img/N+1.png)
 ![](img/2N+1.png)
-![](img/sol N+1.png)
+![](img/sol_N+1.png)
 
 ## Gemas Testing para TDD
 ![](img/test_ruby.jpg)
