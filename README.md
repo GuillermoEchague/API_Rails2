@@ -66,6 +66,21 @@ rails db:migrate RAILS_ENV=test
 rails g factory_bot:model user email name auth_token
 rails g factory_bot:model post title content published user:references
 ```
+## Generar Serialize
+```bash
+rails g serializer post 
+```
 
+## Caso de Uso
+![](img/casos de uso.png)
 
+## Entidad Relación
+![](img/entidad-relacion.png)
+
+## Problema N+1
+![](img/N+1.png)
+![](img/2N+1.png)
+![](img/sol N+1.png)
+
+## Gemas Testing para TDD
 ![](img/test_ruby.jpg)
